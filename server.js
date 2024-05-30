@@ -22,4 +22,4 @@ app.get('/:ShortUrl',async(req,res)=>
     res.redirect(ShortUrl.full);
 
 })
-app.listen(5000);
+app.listen(process.env.PORT||5000);
